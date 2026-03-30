@@ -1753,5 +1753,14 @@
         setTimeout(() => (msg.style.display = "none"), 4000);
       }
     </script>
+
+    <script>
+  document.querySelector('resume').addEventListener('click', () => {
+    gtag('event', 'resume_download', {
+      event_category: 'engagement',
+      event_label: 'Resume PDF'
+    });
+  });
+</script>
   </body>
 </html>
